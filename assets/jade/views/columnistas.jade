@@ -1,0 +1,67 @@
+include helpers/variables
+include helpers/mixins
+doctype html
+html(lang='es-PE')
+	head
+		title Columnistas
+		include layouts/head
+	body
+		include layouts/commonheader
+		#main
+			section#main_columnistas.container-fluid
+				.row
+					.hidden-sm.col-md-2.asidebanner
+						+jpg("banner_left")
+					.col-md-12
+						+jpg("banner-header")
+						section#columnistas
+							+section("Columnistas", "LO ÚLTIMO EN COLUMNISTAS")
+							+blogs("El gol de la muerte", "blog_avatar_01",  "LIBROS", "Ya lo pasado, PASADO", "Décimas Cosas", "blog_avatar_02", "blog_avatar_03", "Augusto Álvarez Rodrich", "Miko Laurer", "Aldo Miyashiro")
+							+blogs("El gol de la muerte", "blog_avatar_01",  "Y tú...  ¿Ya hiciste click?", "Educando con Amor Firme", "Moda entre Tendente", "blog_avatar_02", "blog_avatar_03", "Fransisco Durand", "Humberto Campodónico", "Javier Ágreda")
+							+blogs("El gol de la muerte", "blog_avatar_01",  "LIBROS", "Ya lo pasado, PASADO", "Décimas Cosas", "blog_avatar_02", "blog_avatar_03", "Augusto Álvarez Rodrich", "Miko Laurer", "Aldo Miyashiro")
+							+blogs("El gol de la muerte", "blog_avatar_01",  "Y tú...  ¿Ya hiciste click?", "Educando con Amor Firme", "Moda entre Tendente", "blog_avatar_02", "blog_avatar_03", "Fransisco Durand", "Humberto Campodónico", "Javier Ágreda")
+						section#button
+							button TODAS LAS COLUMNAS
+						section.columnistas
+							+section("", "TODOS LOS COLUMNISTAS")
+						header
+							.row
+								.col-md-16
+									nav
+										ul
+											li
+												a.todos(href="#") TODOS
+											li
+												a.active(href="#") A B C
+											li
+												a.all(href="#") D E F
+											li
+												a.all(href="#") G H I
+											li
+												a.all(href="#") J K L
+											li
+												a.all(href="#") M N O
+											li
+												a.all(href="#") PQRS
+											li
+												a.all(href="#") T U V
+											li
+												a.all(href="#") WXYZ
+							.row
+								.col-md-16
+									.row
+										+columnistas("blog_avatar_02","Tiro al blanco", "francisco Durand")
+										+columnistas("blog_avatar_03", "Humberto Campodónico", "Cristal de Mira")
+										+columnistas("img_blogueros", "Javier Ágreda", "Jarque Perpetuo")
+										+columnistas("blog_avatar_01", "Javier Ágreda", "Defensa")
+							.row
+								.col-md-16
+									.row
+										+columnistas("blog_avatar_02", "francisco Durand", "Delito de Opinión")
+										+columnistas("blog_avatar_03", "Humberto Campodónico", "Actualidad Económica - Oscar Dancourt")
+										+columnistas("img_blogueros", "Javier Ágreda", "Mirada externa")
+										+columnistas("blog_avatar_01", "Javier Ágreda", "Defensa")
+					.hidden-sm.col-md-2.asidebanner
+						+jpg("banner_right")
+		include layouts/footer
+		include layouts/script
