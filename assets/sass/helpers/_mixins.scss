@@ -117,3 +117,11 @@ background-image: linear-gradient($from, $to);
   -moz-box-shadow:$top $left $blur $color #{$inset};
   box-shadow:$top $left $blur $color #{$inset};
 }
+
+@mixin titulos($fsize, $fw, $mg, $family, $color) {
+    font-size: $fsize;
+    font-weight: $fw;
+    margin: $mg;
+    font-family: $family;
+    color: $color;
+}

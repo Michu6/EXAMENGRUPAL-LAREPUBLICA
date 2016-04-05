@@ -1,4 +1,11 @@
 //- MIXINS
+-var htmlnav = [{name:'HOME', url:'home.html'},{name:'BLOGS', url:'blogs.html'},{name:'COLUMNISTAS', url:'columnistas.html'},{name:'CONTACTO', url:'contacto.html'}]
+
+mixin htmlnav(firstnavred)
+	#htmlnav.list-group.list-group-horizontal
+		each linkhtml in htmlnav
+			a.list-group-item(href='#{linkhtml.url}') #{linkhtml.name}
+
 mixin jpg(imgjpg)
 	img(src="assets/image/" + imgjpg + ".jpg")
 
