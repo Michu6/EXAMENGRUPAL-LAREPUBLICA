@@ -847,17 +847,19 @@ header .row .col-md-4.col-sm-8.col-xs-12 {
   .media .media-body {
     width: 10000px; }
     .media .media-body h5 {
-      font-size: 12px;
+      font-size: 11px;
       font-weight: 400;
-      margin: 0;
+      margin: 0 0 3px;
       font-family: "Oswald", Arial, sans-serif!important;
       color: #111417; }
     .media .media-body p {
-      font-size: 18px;
+      font-size: 15px;
       font-weight: 700;
       margin: 0;
       font-family: "PT sans", Arial, sans-serif!important;
-      color: #768696; }
+      color: #768696;
+      line-height: 15px;
+      height: 45px; }
 
 .media, .media-body {
   overflow: hidden;
@@ -875,10 +877,101 @@ header .row .col-md-4.col-sm-8.col-xs-12 {
   vertical-align: top; }
 
 .boxblog {
-  padding: 20px 15px;
+  padding: 10px;
   background-color: #F4F5F7; }
   .boxblog img {
-    border: 2px solid #fff; }
+    border: 2px solid #fff;
+    width: 50px;
+    height: 55px; }
+
+#blogs h1, #columnistas h1, .columnistas h1 {
+  font-size: 50px;
+  font-weight: 700;
+  margin: 35px 0;
+  font-family: "PT sans", Arial, sans-serif!important;
+  color: #111417; }
+#blogs h3, #columnistas h3, .columnistas h3 {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0 0 30px;
+  font-family: "Oswald", Arial, sans-serif!important;
+  color: #768696; }
+  #blogs h3 i, #columnistas h3 i, .columnistas h3 i {
+    font-size: 24px;
+    color: #BA1414;
+    margin-left: 8px; }
+#blogs .relative, #columnistas .relative, .columnistas .relative {
+  position: relative;
+  padding: 10px;
+  border: 2px solid #F4F5F7;
+  margin-bottom: 20px; }
+  #blogs .relative .blogs, #columnistas .relative .blogs, .columnistas .relative .blogs {
+    text-align: center; }
+    #blogs .relative .blogs p, #columnistas .relative .blogs p, .columnistas .relative .blogs p {
+      font-size: 13px;
+      font-weight: 400;
+      margin: 25px 0 5px;
+      font-family: "PT sans", Arial, sans-serif!important;
+      color: #111417; }
+    #blogs .relative .blogs h4, #columnistas .relative .blogs h4, .columnistas .relative .blogs h4 {
+      font-size: 20px;
+      font-weight: 700;
+      margin: 0 0 50px;
+      font-family: "PT sans", Arial, sans-serif!important;
+      color: #111417;
+      height: 30px; }
+
+#button {
+  text-align: center;
+  margin: 20px auto 50px;
+  width: 250px; }
+  #button button {
+    background-color: #BA1414;
+    border: 1px solid #BA1414;
+    border-radius: 2px;
+    padding: 1px 30px;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0;
+    font-family: "PT sans", Arial, sans-serif!important;
+    color: #fff; }
+
+header .list-group-1 {
+  background-color: #BA1414;
+  padding: 0 20px 20px;
+  margin-bottom: 15px;
+  width: 100%;
+  text-align: center; }
+  header .list-group-1.list-group-2 {
+    display: inline-block;
+    margin-left: -4px;
+    margin-right: 0; }
+  header .list-group-1 .list-group-item-a {
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0px;
+    font-family: "PT sans", Arial, sans-serif!important;
+    color: #fff;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    padding: 3px 15px;
+    border-radius: 10px;
+    margin: 20px 5px 0; }
+    header .list-group-1 .list-group-item-a:hover {
+      background-color: red; }
+    header .list-group-1 .list-group-item-a:nth-child(2) {
+      background-color: red; }
+    header .list-group-1 .list-group-item-a:first-child {
+      margin-left: 20px;
+      background-color: #5e0a0a;
+      margin-left: 0px; }
+    header .list-group-1 .list-group-item-a:last-child {
+      margin-right: 10px; }
+header .row {
+  padding: 0 5px; }
+  header .row .col-md-4.col-sm-8.col-xs-16 {
+    padding: 2px; }
 
 img {
   width: 100%; }
